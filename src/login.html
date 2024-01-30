@@ -36,10 +36,10 @@
                 <div class="form-outline mb-4">
                   <input
                     type="email"
-                    id="emailInput"
+                    id="loginEmailInput"
                     class="form-control form-control-lg"
                   />
-                  <label class="form-label" for="emailInput"
+                  <label class="form-label" for="loginEmailInput"
                     >Email address</label
                   >
                 </div>
@@ -47,14 +47,20 @@
                 <div class="form-outline mb-4">
                   <input
                     type="password"
-                    id="passwordInput"
+                    id="loginPasswordInput"
                     class="form-control form-control-lg"
                   />
-                  <label class="form-label" for="passwordInput">Password</label>
+                  <label class="form-label" for="loginPasswordInput"
+                    >Password</label
+                  >
                 </div>
 
                 <div class="pt-1 mb-4">
-                  <button class="btn btn-info btn-lg btn-block" type="button">
+                  <button
+                    class="btn btn-info btn-lg btn-block"
+                    id="loginBtn"
+                    type="button"
+                  >
                     Login
                   </button>
                 </div>
@@ -111,7 +117,7 @@
                   <input
                     type="email"
                     class="form-control"
-                    id="email"
+                    id="registerEmailInput"
                     aria-describedby="emailHelp"
                     required
                   />
@@ -121,7 +127,7 @@
                   <input
                     type="password"
                     class="form-control"
-                    id="password"
+                    id="registerPasswordInput"
                     required
                   />
                 </div>
@@ -135,7 +141,13 @@
               >
                 Close
               </button>
-              <button type="button" class="btn btn-primary">Sign Up</button>
+              <button
+                type="button"
+                id="registerSignUpBtn"
+                class="btn btn-primary"
+              >
+                Sign Up
+              </button>
             </div>
           </div>
         </div>
@@ -195,6 +207,6 @@
     </section>
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="login.js" type="module"></script>
   </body>
 </html>
