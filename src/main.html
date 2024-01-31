@@ -12,7 +12,7 @@
   </head>
   <body>
     <section id="headerSection">
-      <header class="p-3 bg-dark text-white">
+      <header class="p-3 bg-dark text-white fixed-top">
         <div class="container">
           <div
             class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
@@ -22,10 +22,10 @@
               class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
             >
               <img
-                src="../pictures/hor_logo.png"
+                src="../pictures/bateman.png"
                 alt="headerLogo"
-                width="50"
-                height="50"
+                width="70"
+                height="70"
               />
             </a>
 
@@ -33,10 +33,20 @@
               class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
             >
               <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-              <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+              <li>
+                <a href="#newsCardsContainer" class="nav-link px-2 text-white"
+                  >News</a
+                >
+              </li>
+              <li>
+                <a href="#eventsContainer" class="nav-link px-2 text-white"
+                  >Events</a
+                >
+              </li>
+              <li><a href="#" class="nav-link px-2 text-white">Library</a></li>
+              <li>
+                <a href="#" class="nav-link px-2 text-white">Contact</a>
+              </li>
             </ul>
 
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -63,29 +73,11 @@
     </section>
 
     <section id="carouselSection">
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="../pictures/ddan.jpg" class="d-block w-100" alt="..." />
@@ -108,7 +100,7 @@
         <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -117,7 +109,7 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -447,6 +439,71 @@
       </section>
     </div>
 
+    <section id="eventsContainer">
+      <div class="container-fluid bg-dark">
+        <div class="row">
+          <div class="col-12 bg-dark text-center text-white py-4">
+            <img
+              src="../pictures/ltflag.png"
+              alt="City Image"
+              class="img-fluid mb-2 rounded"
+              style="max-height: 50px; border: 2px white solid"
+            />
+            <h1>POPULAR IN KAUNAS</h1>
+          </div>
+        </div>
+
+        <div class="row justify-content-around mt-4">
+          <!-- Event Cards Go Here -->
+          <div class="col-md-3 mb-4 text-center">
+            <div class="card">
+              <img
+                src="../pictures/eventpic1.png"
+                class="card-img-top"
+                alt="Event Image 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Event 1</h5>
+                <p class="card-text">Event details go here.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4 text-center">
+            <div class="card">
+              <img
+                src="../pictures/eventpic1.png"
+                class="card-img-top"
+                alt="Event Image 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Event 2</h5>
+                <p class="card-text">Event details go here.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4 text-center">
+            <div class="card">
+              <img
+                src="../pictures/eventpic1.png"
+                class="card-img-top"
+                alt="Event Image 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Event 2</h5>
+                <p class="card-text">Event details go here.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center bg-dark">
+        <div class="col-6 text-center">
+          <button class="btn btn-primary btn-lg mt-4">View More Events</button>
+        </div>
+      </div>
+    </section>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="mainPage.js" type="module"></script>
   </body>
